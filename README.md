@@ -258,11 +258,7 @@ Mặc định, tất cả dependency được provides chưa có scope. Điều 
 |ViewWithFragmentComponent  |@ViewScoped |
 |ServiceComponent  |@ServiceScoped  |
 
-```
-Scoping a binding to a component can be costly because the provided object stays in memory until that component is destroyed. Minimize the use of scoped bindings in your application. It is appropriate to use component-scoped bindings for bindings with an internal state that requires that same instance to be used within a certain scope, for bindings that need synchronization, or for bindings that you have measured to be expensive to create.
-```
-__Component hierarchy__ Installing a module into a component allows its bindings to be accessed as a dependency of other bindings in that component or in any child component below it in the component hierarchy:
-![Component hierarchy](https://developer.android.com/images/training/dependency-injection/hilt-hierarchy.svg)
+
 
 ### Inject class không được hỗ trợ bởi Hilt
 ___
